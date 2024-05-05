@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* loading  */
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite; /* Apply animation */
+  margin: 20px auto; /* Center the loader */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.dynamic {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  input[type="text"] {
+    touch-action: manipulation;
+  }
+  .nav-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-content .Account {
+    font-size: 12px;
+  }
+  .nav-content .title {
+    text-align: center;
+  }
+  #location {
+    width: 80px;
+  }
+  .searchBar i {
+    display: none;
+  }
+  .searchBar {
+    margin-left: 30px;
+  }
+  .Account {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Sliders */
+
+  .slider-wrap .slider-content,
+  .Slider-text {
+    display: none;
+  }
+  .slider-wrap img {
+    width: 30%;
+    height: 30%;
+  }
+  .slider-content img {
+    max-width: 50%;
+    width: 50%;
+  }
+  /* displayfruits */
+
+  .display-main .displayFruits {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 2%;
+  }
+  .display-main .displayFruits .displayImageWrap {
+    width: 90%;
+  }
+  .display-main .displayFruits .displayImageWrap img {
+    width: 150px;
+    height: 160px;
+  }
+  .dipslay-image-text h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+  }
+  .display-main {
+    font-size: 10px;
+  }
+
+  /* profile drop down  */
+
+  .profile-wrap {
+    margin-top: 100px;
+  }
+
+  /* .dynamic */
+  .dynamic .grid-view,
+  .linear-view {
+    display: none;
+  }
+  .display-seller-no .no-seller {
+    font-size: 15px;
+  }
+
+  .display-seller-no p {
+    font-size: 15px;
+  }
+
+  .seller-display-wrap .display-sellers-wrap img {
+    width: 80%;
+    height: 70%;
+  }
+  .seller-display-wrap .display-sellers-wrap {
+    height: 430px;
+    width: 300px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seller-display-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Login and signup */
+
+  .login {
+    right: 7%;
+    top: auto;
+    width: 300px;
+    height: 340px;
+  }
+  .fromInput {
+    margin-top: 1px;
+  }
+  .fromInput input {
+    width: 200px;
+  }
+
+  /* veggie */
+  /* Slide */
+  #veggie-top {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .veggies-slider-wrap {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px; /* Adjust font size for mobile */
+    margin: 10px; /* Reduce margins for better spacing */
+  }
+
+  .vegie-slider img {
+    width: 180px; /* Reduce image size for mobile */
+    height: 180px;
+    border-radius: 50%;
+    transition: width 2s, height 2s, transform 2s;
+  }
+
+  .vegie-slider img:hover {
+    transform: scale(1.5); /* Adjust hover scale for better visibility */
+  }
+
+  .vegie-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    padding: 10px;
+  }
+
+  .vegie-slider p {
+    margin-top: 10px;
+  }
+
+  #veggies-title {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+  }
+
+  /* Mobile Specific Styles */
+
+  .veggie-map-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+
+  .veggies-map {
+    background-color: white;
+  }
+  .veggies-slider-wrap {
+    height: 0;
+  }
+  .vegie-slider {
+    display: none;
+  }
+  .veggies-map {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    grid-template-columns: auto auto;
+    margin-left: 2%;
+  }
+
+  /* cart wrap  */
+
+  .display-sellers-wrap {
+    /* height: 200px;
+    width: 200px; */
+
+    /* background-color: yellow; */
+  }
+
+  .main-cart .cart-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 550px; */
+    width: 100%;
+  }
+
+  .main-cart .cart-wrap .display-sellers-wrap img {
+    height: 200px;
+    width: 200px;
+  }
+  .main-cart .cart-wrap .display-sellers-wrap {
+    margin-left: 100px;
+    height: 330px;
+    width: 250px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  /* Individual item in the cart */
+
+  .main-cart {
+    display: flex;
+    flex-direction: column;
+    /* margin-left:; */
+  }
+
+  .main-cart .check-out {
+    margin: 20px;
+  }
+
+  .main-cart .check-out button {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+}
