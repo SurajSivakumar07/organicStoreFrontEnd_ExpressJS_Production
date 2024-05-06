@@ -8,9 +8,6 @@ export default function DropDownProfile() {
     <>
       <div className="profile-drop-down">
         <ul>
-          {/* <li>
-            <Link to="/">My Account</Link>
-          </li> */}
           <li>
             <Link to="/cart">Cart</Link>
           </li>
@@ -21,8 +18,8 @@ export default function DropDownProfile() {
           <li
             onClick={() => {
               localStorage.clear();
-              window.location.reload();
               navigation("/");
+              window.location.reload();
             }}
           >
             Logout
