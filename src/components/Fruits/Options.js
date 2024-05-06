@@ -17,7 +17,7 @@ export default function Options() {
             {/* <i class="fa-solid fa-motorcycle"></i> */}
           </div>
           <div className="option-delivery">
-            <Link to="/fruits">
+            <Link to="/">
               <p id="fruits">Fruits</p>
             </Link>
             <Link to="/veggies">
