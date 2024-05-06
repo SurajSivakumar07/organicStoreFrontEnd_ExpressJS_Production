@@ -7,25 +7,25 @@ export default function Summary() {
         <h1>FAQ'S</h1>
         <div className="summary-content">
           <details>
+            <summary>How Quick does the food get delivered!</summary>
+            <p>30-min </p>
+          </details>
+          <details>
+            <summary>Are they fresh!</summary>
+            <p>yes </p>
+          </details>
+          <details>
+            <summary>Replacement is available !</summary>
+            <p>Nope </p>
+          </details>
+          {/* <details>
             <summary>Know About US!</summary>
             <p>Poda </p>
           </details>
           <details>
             <summary>Know About US!</summary>
             <p>Poda </p>
-          </details>
-          <details>
-            <summary>Know About US!</summary>
-            <p>Poda </p>
-          </details>
-          <details>
-            <summary>Know About US!</summary>
-            <p>Poda </p>
-          </details>
-          <details>
-            <summary>Know About US!</summary>
-            <p>Poda </p>
-          </details>
+          </details> */}
         </div>
       </div>
     </>

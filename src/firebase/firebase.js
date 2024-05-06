@@ -3,9 +3,9 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCGkZbMSBl19B6I0t-BlzeM9UzeblpbC54",
+  apiKey: process.env.API_KEY,
   authDomain: "socail-meda.firebaseapp.com",
-  databaseURL: "https://socail-meda-default-rtdb.firebaseio.com",
+  databaseURL: process.env.DATABASE_URL,
   projectId: "socail-meda",
   storageBucket: "socail-meda.appspot.com",
   messagingSenderId: "710400362028",
